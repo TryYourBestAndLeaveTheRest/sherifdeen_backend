@@ -1,0 +1,10 @@
+<h1>Welcome to our Blogging Platform</h1>
+<p>Check out the latest blogs:</p>
+<a href="/blogs/addblog">Add post</a>
+<% blogs.forEach(blog => { %>
+<div>
+  <h2><%= blog.title %></h2>
+  <p><%= blog.description %></p>
+  <a href="/blogs/<%= blog._id %>">Read more</a>
+</div>
+<% }); %>
